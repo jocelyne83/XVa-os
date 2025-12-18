@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mis XV – María Paz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Mis XV – María Paz</h1>
+    <p>¡Acompáñame en este día especial!</p>
+    <div id="countdown" aria-live="polite"></div>
+  </header>
+
+  <main>
+    <section id="pases" class="card">
+      <h2>Pases asignados</h2>
+      <p id="pasesText">Ingresa desde tu link con código para ver tus pases.</p>
+    </section>
+
+    <section id="rsvp" class="card">
+      <h2>Confirmación de asistencia</h2>
+      <form id="rsvpForm">
+        <input type="hidden" id="codigo" name="codigo" />
+        <div class="field">
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" required />
+        </div>
+        <div class="field">
+          <label for="asistencia">¿Asistirás?</label>
+          <select id="asistencia" name="asistencia" required>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <button type="submit">Confirmar</button>
+        <p id="rsvpStatus"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Con cariño, María Paz</p>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
